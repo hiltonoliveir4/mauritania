@@ -3,7 +3,7 @@ import Image from "next/image";
 export default function Home() {
   return (
     <main className="flex flex-col snap-y snap-mandatory h-screen w-screen overflow-scroll">
-      <div className="snap-center relative bg-pink-950 flex flex-col items-center justify-center py-16 gap-6 p-4 h-screen">
+      <div className="snap-center relative bg-pink-950 flex flex-col items-center justify-center py-16 gap-6 p-4 min-h-screen">
         <div className="text-white flex flex-col items-center">
           <h1 className="text-2xl font-bold">
             Mauritania
@@ -11,7 +11,7 @@ export default function Home() {
           <p className="text-base">Com todo meu amor e carinho <span className="animate-pulse">❤️</span></p>
         </div>
         <Image 
-          className="rounded-2xl shadow-2xl w-full"
+          className="rounded-2xl shadow-2xl w-full h-72 object-cover"
           src={"/IMG_6429.jpg"}
           width={300}
           height={300}
@@ -25,9 +25,9 @@ export default function Home() {
         </p>
         <Image className="w-full absolute bottom-[-5px] left-0" src={"/wave.png"} width={100} height={100} alt="wave"></Image>
       </div>
-      <div className="snap-center relative bg-white flex flex-col items-center justify-center py-8 gap-6 p-4 h-screen">    
+      <div className="snap-center relative bg-white flex flex-col items-center justify-center py-8 gap-6 p-4 min-h-screen">    
         <Image 
-          className="rounded-2xl shadow-2xl w-full"
+          className="rounded-2xl shadow-2xl w-full h-72 object-cover"
           src={"/trabalho.jpg"}
           width={300}
           height={300}
@@ -39,9 +39,9 @@ export default function Home() {
           Tenho orgulho de ver o quanto você se esforça e conquista seus objetivos. 
         </p>
       </div>
-      <div className="snap-center relative bg-pink-950 flex flex-col items-center justify-center py-16 gap-6 p-4 h-screen">
+      <div className="snap-center relative bg-pink-950 flex flex-col items-center justify-center py-16 gap-6 p-4 min-h-screen">
         <Image 
-          className="rounded-2xl shadow-2xl w-full"
+          className="rounded-2xl shadow-2xl w-full h-72 object-cover"
           src={"/IMG_7158.jpg"}
           width={300}
           height={300}
@@ -57,7 +57,7 @@ export default function Home() {
         <Image className="w-full absolute top-[-5px] left-0" src={"/wave-reverse.png"} width={100} height={100} alt="wave"></Image>
         <Image className="w-full absolute bottom-[-5px] left-0" src={"/wave.png"} width={100} height={100} alt="wave"></Image>
       </div>
-      <div className="snap-center h-screen relative bg-white flex flex-col items-center justify-center pt-10 pb-28 gap-10 p-4">
+      <div className="snap-center min-h-screen relative bg-white flex flex-col items-center justify-center pt-10 pb-28 gap-10 p-4">
         <h2 className="text-5xl font-bold text-center text-pink-950 py-4">Feliz dia das mulheres!</h2>
         <Image 
           className="rounded-2xl shadow-2xl w-full"
